@@ -12,24 +12,19 @@ LabelImg, the popular image annotation tool created by Tzutalin with the help of
 Installation without any trouble in Ubuntu
 ========
 .. code:: shell
-    # Clone the repository
-    git clone https://github.com/opensistemas-hub/labelImg.git
-
-    # Change to the repository directory
-    cd labelImg
+        
+    git clone https://github.com/opensistemas-hub/labelImg.git # Clone the repository
     
-    # Install prerequisites
-    sudo apt-get install pyqt5-dev-tools
+    cd labelImg # Change to the repository directory
+    
+    sudo apt-get install pyqt5-dev-tools # Install prerequisites
     pip install PyQt5 lxml setuptools
     
-    # Generate the resource file
-    pyrcc5 -o libs/resources.py resources.qrc
+    pyrcc5 -o libs/resources.py resources.qrc # Generate the resource file
     
-    # Install
-    python setup.py install
+    python setup.py install # Install
     
-    # Run
-    labelImg images/ labels/classes.txt labels/
+    labelImg images/ labels/classes.txt labels/ # Run
 
 About LabelImg
 ========
