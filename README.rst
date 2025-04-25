@@ -9,6 +9,30 @@ LabelImg, the popular image annotation tool created by Tzutalin with the help of
 .. image:: /readme/images/label-studio-1-6-player-screenshot.png
         :target: https://github.com/heartexlabs/label-studio
 
+
+# Installation without any trouble in Ubuntu
+
+```bash
+# Clone the repository
+git clone https://github.com/opensistemas-hub/labelImg.git
+
+# Change to the repository directory
+cd labelImg
+
+# Install prerequisites
+sudo apt-get install pyqt5-dev-tools
+pip install PyQt5 lxml setuptools
+
+# Generate the resource file
+pyrcc5 -o libs/resources.py resources.qrc
+
+# Install
+python setup.py install
+
+# Run
+labelImg images/ labels/classes.txt labels/
+```
+
 About LabelImg
 ========
 
